@@ -8,7 +8,6 @@ install:
   - bin/install-python.bat
   - py -3 --version
   - py -3 -m pip install pip --upgrade
-  - py -3 -m pip install winreg
   - bin/install-roblox.bat
   - cargo install run-in-roblox
   - py -3 bin/rbx-studio-sign-in.py $ROBLOXSECURITY
