@@ -1,1 +1,1 @@
-echo "Cannot install roblox yet :("
+start "roblox-studio:"
