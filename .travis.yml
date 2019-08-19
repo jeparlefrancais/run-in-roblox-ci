@@ -14,3 +14,7 @@ install:
 script:
   - echo "Run tests!"
   - run-in-roblox place.rbxlx -s bin/run-tests.lua
+
+branches:
+  only:
+  - master
