@@ -1,13 +1,10 @@
-
+os: windows
 language: rust
 rust: stable
 cache: cargo
-os: windows
 
 install:
   - bin/install-python.bat
-  - py -3 --version
-  - py -3 -m pip install pip --upgrade
   - bin/install-roblox.bat
   - cargo install run-in-roblox
   - py -3 bin/rbx-studio-sign-in.py $ROBLOXSECURITY
