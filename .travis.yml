@@ -5,6 +5,7 @@ cache: cargo
 
 install:
   - bin/install-python.bat
+  - curl http://setup.roblox.com/RobloxStudioLauncherBeta.exe --output rbxinstall.exe
   - py bin/install-studio.py
   - cargo install run-in-roblox
   - py -3 bin/rbx-studio-sign-in.py $ROBLOXSECURITY

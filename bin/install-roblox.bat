@@ -1,1 +1,0 @@
-curl http://setup.roblox.com/RobloxStudioLauncherBeta.exe --output bin/rbxinstall.exe
