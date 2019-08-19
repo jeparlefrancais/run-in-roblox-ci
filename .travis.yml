@@ -5,8 +5,7 @@ cache: cargo
 
 install:
   - bin/install-python.bat
-  - bin/install-roblox.bat
-  - py bin/wait-for-file.py api.json
+  - py bin/install-studio.py
   - cargo install run-in-roblox
   - py -3 bin/rbx-studio-sign-in.py $ROBLOXSECURITY
 
