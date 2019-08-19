@@ -1,0 +1,16 @@
+
+language: rust
+rust: stable
+cache: cargo
+os: windows
+
+install:
+  - bin/install-python.bat
+  - python --version
+  - bin/install-roblox.bat
+  - cargo install run-in-roblox
+  - python bin/rbx-studio-sign-in.py $ROBLOXSECURITY
+
+script:
+  - echo "Run tests!"
+  - run-in-roblox place.rbxlx -s bin/run-tests.lua
